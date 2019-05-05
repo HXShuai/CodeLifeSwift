@@ -93,7 +93,6 @@
 				9C708BF2CDFDDB6FB810F8AC /* Pods-CodeLife.debug.xcconfig */,
 				6449CC42C7E570E54A07CCB1 /* Pods-CodeLife.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -487,11 +486,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CBGMTED2R7;
 				INFOPLIST_FILE = CodeLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hxs.CodeLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hxs.code;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,11 +506,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CBGMTED2R7;
 				INFOPLIST_FILE = CodeLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hxs.CodeLife;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hxs.code;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
