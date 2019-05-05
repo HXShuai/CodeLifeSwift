@@ -14,6 +14,7 @@
 		869C7D8E227E745A00A0F93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869C7D8C227E745A00A0F93E /* LaunchScreen.storyboard */; };
 		869C7D99227E745A00A0F93E /* CodeLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C7D98227E745A00A0F93E /* CodeLifeTests.swift */; };
 		869C7DA4227E745A00A0F93E /* CodeLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C7DA3227E745A00A0F93E /* CodeLifeUITests.swift */; };
+		9AB95EB838AEFEE42ADBC2C3 /* Pods_CodeLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343D3928F4C58262A7EB88DF /* Pods_CodeLife.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		343D3928F4C58262A7EB88DF /* Pods_CodeLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6449CC42C7E570E54A07CCB1 /* Pods-CodeLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLife.release.xcconfig"; path = "Target Support Files/Pods-CodeLife/Pods-CodeLife.release.xcconfig"; sourceTree = "<group>"; };
 		869C7D80227E745900A0F93E /* CodeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869C7D83227E745900A0F93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869C7D85227E745900A0F93E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		869C7D9F227E745A00A0F93E /* CodeLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		869C7DA3227E745A00A0F93E /* CodeLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLifeUITests.swift; sourceTree = "<group>"; };
 		869C7DA5227E745A00A0F93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C708BF2CDFDDB6FB810F8AC /* Pods-CodeLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLife.debug.xcconfig"; path = "Target Support Files/Pods-CodeLife/Pods-CodeLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB95EB838AEFEE42ADBC2C3 /* Pods_CodeLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29C71631BF63C5B3DC5F3780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343D3928F4C58262A7EB88DF /* Pods_CodeLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BA1F05B8D798569E637D6FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C708BF2CDFDDB6FB810F8AC /* Pods-CodeLife.debug.xcconfig */,
+				6449CC42C7E570E54A07CCB1 /* Pods-CodeLife.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		869C7D77227E745800A0F93E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				869C7D97227E745A00A0F93E /* CodeLifeTests */,
 				869C7DA2227E745A00A0F93E /* CodeLifeUITests */,
 				869C7D81227E745900A0F93E /* Products */,
+				5BA1F05B8D798569E637D6FB /* Pods */,
+				29C71631BF63C5B3DC5F3780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 869C7DA8227E745A00A0F93E /* Build configuration list for PBXNativeTarget "CodeLife" */;
 			buildPhases = (
+				CF72116BBF7B6C98692E4E98 /* [CP] Check Pods Manifest.lock */,
 				869C7D7C227E745900A0F93E /* Sources */,
 				869C7D7D227E745900A0F93E /* Frameworks */,
 				869C7D7E227E745900A0F93E /* Resources */,
@@ -250,6 +276,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF72116BBF7B6C98692E4E98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		869C7D7C227E745900A0F93E /* Sources */ = {
@@ -430,6 +481,7 @@
 		};
 		869C7DA9227E745A00A0F93E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C708BF2CDFDDB6FB810F8AC /* Pods-CodeLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +500,7 @@
 		};
 		869C7DAA227E745A00A0F93E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6449CC42C7E570E54A07CCB1 /* Pods-CodeLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
