@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: bef606049d3fb176ac9364599663a9a5aade1110
+PODS:
+  - Eureka (5.0.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - Eureka
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Eureka
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: dd687c0d0905d36c3dc9610ed813b009a1083fdd
 
 COCOAPODS: 1.6.0

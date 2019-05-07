@@ -14,6 +14,11 @@
 		869C7D8E227E745A00A0F93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869C7D8C227E745A00A0F93E /* LaunchScreen.storyboard */; };
 		869C7D99227E745A00A0F93E /* CodeLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C7D98227E745A00A0F93E /* CodeLifeTests.swift */; };
 		869C7DA4227E745A00A0F93E /* CodeLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C7DA3227E745A00A0F93E /* CodeLifeUITests.swift */; };
+		86C31537227FE1000036CA67 /* ClassTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C31536227FE1000036CA67 /* ClassTableCell.swift */; };
+		86C31539227FE2410036CA67 /* ClassTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C31538227FE2410036CA67 /* ClassTableHeaderView.swift */; };
+		86C3153B227FE45F0036CA67 /* ClassTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C3153A227FE45F0036CA67 /* ClassTableFooterView.swift */; };
+		86C3153D227FE6180036CA67 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3153C227FE6180036CA67 /* Eureka.framework */; };
+		86C3153F227FE61D0036CA67 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3153E227FE61D0036CA67 /* SnapKit.framework */; };
 		9AB95EB838AEFEE42ADBC2C3 /* Pods_CodeLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343D3928F4C58262A7EB88DF /* Pods_CodeLife.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		869C7D9F227E745A00A0F93E /* CodeLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		869C7DA3227E745A00A0F93E /* CodeLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLifeUITests.swift; sourceTree = "<group>"; };
 		869C7DA5227E745A00A0F93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C31536227FE1000036CA67 /* ClassTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableCell.swift; sourceTree = "<group>"; };
+		86C31538227FE2410036CA67 /* ClassTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableHeaderView.swift; sourceTree = "<group>"; };
+		86C3153A227FE45F0036CA67 /* ClassTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableFooterView.swift; sourceTree = "<group>"; };
+		86C3153C227FE6180036CA67 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C3153E227FE61D0036CA67 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C708BF2CDFDDB6FB810F8AC /* Pods-CodeLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLife.debug.xcconfig"; path = "Target Support Files/Pods-CodeLife/Pods-CodeLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C3153F227FE61D0036CA67 /* SnapKit.framework in Frameworks */,
+				86C3153D227FE6180036CA67 /* Eureka.framework in Frameworks */,
 				9AB95EB838AEFEE42ADBC2C3 /* Pods_CodeLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +94,8 @@
 		29C71631BF63C5B3DC5F3780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86C3153E227FE61D0036CA67 /* SnapKit.framework */,
+				86C3153C227FE6180036CA67 /* Eureka.framework */,
 				343D3928F4C58262A7EB88DF /* Pods_CodeLife.framework */,
 			);
 			name = Frameworks;
@@ -121,6 +135,7 @@
 		869C7D82227E745900A0F93E /* CodeLife */ = {
 			isa = PBXGroup;
 			children = (
+				86C31535227FE0C30036CA67 /* Cells */,
 				869C7D83227E745900A0F93E /* AppDelegate.swift */,
 				869C7D85227E745900A0F93E /* ViewController.swift */,
 				869C7D87227E745900A0F93E /* Main.storyboard */,
@@ -149,6 +164,16 @@
 			path = CodeLifeUITests;
 			sourceTree = "<group>";
 		};
+		86C31535227FE0C30036CA67 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				86C31536227FE1000036CA67 /* ClassTableCell.swift */,
+				86C31538227FE2410036CA67 /* ClassTableHeaderView.swift */,
+				86C3153A227FE45F0036CA67 /* ClassTableFooterView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +185,7 @@
 				869C7D7C227E745900A0F93E /* Sources */,
 				869C7D7D227E745900A0F93E /* Frameworks */,
 				869C7D7E227E745900A0F93E /* Resources */,
+				6796C44A83269845998FC5D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +303,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6796C44A83269845998FC5D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeLife/Pods-CodeLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeLife/Pods-CodeLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CF72116BBF7B6C98692E4E98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,8 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C31537227FE1000036CA67 /* ClassTableCell.swift in Sources */,
+				86C3153B227FE45F0036CA67 /* ClassTableFooterView.swift in Sources */,
 				869C7D86227E745900A0F93E /* ViewController.swift in Sources */,
 				869C7D84227E745900A0F93E /* AppDelegate.swift in Sources */,
+				86C31539227FE2410036CA67 /* ClassTableHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
